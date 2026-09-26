@@ -147,9 +147,7 @@ http://127.0.0.1:5000
 
 ### 1. Clone o repositório
 
-```bash
-git clone <URL_DO_REPOSITORIO>
-```
+git clone https://github.com/MateusAtaide/motocare-front.git
 
 Entre na pasta:
 
@@ -368,9 +366,7 @@ A arquitetura utilizada no projeto é composta pelo frontend, pela API própria 
 
 A API do MotoCare é mantida em um repositório separado:
 
-```text
-<URL_DO_REPOSITORIO_API>
-```
+https://github.com/MateusAtaide/motocare-api
 
 ---
 
