@@ -1,0 +1,150 @@
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 0;
+}
+
+.form-group label {
+    color: #374151;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 11px 12px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+
+    background: white;
+    color: #111827;
+
+    outline: none;
+
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.campo-completo {
+    grid-column: 1 / -1;
+}
+
+.form-erro {
+    margin: 18px 0 0;
+    padding: 12px;
+
+    background: #fef2f2;
+    color: #b91c1c;
+
+    border-radius: 8px;
+
+    font-size: 0.9rem;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 26px;
+}
+
+.btn-secondary {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #e5e7eb;
+    color: #374151;
+
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background: #d1d5db;
+}
+
+.btn-danger {
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #dc2626;
+    color: white;
+
+    font-weight: 600;
+}
+
+.btn-danger:hover {
+    background: #b91c1c;
+}
+
+/* Confirmação de exclusão */
+
+.confirmacao-exclusao {
+    text-align: center;
+}
+
+.confirmacao-icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.confirmacao-exclusao h2 {
+    margin: 0 0 10px;
+}
+
+.confirmacao-exclusao p {
+    color: #4b5563;
+}
+
+.confirmacao-aviso {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campo-completo {
+        grid-column: auto;
+    }
+
+    .modal-actions {
+        flex-direction: column-reverse;
+    }
+
+    .modal-actions button {
+        width: 100%;
+    }
+}

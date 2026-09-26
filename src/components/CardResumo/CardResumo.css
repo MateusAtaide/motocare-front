@@ -1,0 +1,53 @@
+.card-resumo {
+    background: white;
+
+    border-radius: 14px;
+    padding: 22px;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-resumo-icon {
+    width: 48px;
+    height: 48px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 12px;
+
+    background: #eff6ff;
+
+    font-size: 1.5rem;
+}
+
+.card-resumo-titulo {
+    margin: 0 0 6px;
+
+    color: #6b7280;
+
+    font-size: 0.9rem;
+}
+
+.card-resumo-valor {
+    display: block;
+
+    font-size: 1.5rem;
+
+    color: #111827;
+}
+
+.card-resumo-descricao {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+
+    font-size: 0.85rem;
+}

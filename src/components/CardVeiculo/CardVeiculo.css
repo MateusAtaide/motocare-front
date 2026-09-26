@@ -1,0 +1,133 @@
+.card-veiculo {
+    background: white;
+
+    padding: 24px;
+
+    border-radius: 14px;
+
+    border: 1px solid #e5e7eb;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card-veiculo-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 20px;
+}
+
+.veiculo-identificacao {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.veiculo-tipo-icon {
+    width: 56px;
+    height: 56px;
+
+    display: grid;
+    place-items: center;
+
+    background: #dbeafe;
+
+    border-radius: 12px;
+
+    font-size: 1.8rem;
+}
+
+.veiculo-identificacao h2 {
+    margin: 0;
+
+    font-size: 1.2rem;
+}
+
+.veiculo-identificacao p {
+    margin: 5px 0 0;
+
+    color: #6b7280;
+}
+
+.status {
+    padding: 6px 10px;
+
+    border-radius: 999px;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.status.ativo {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.status.inativo {
+    background: #f3f4f6;
+    color: #6b7280;
+}
+
+.veiculo-km {
+    display: flex;
+    flex-direction: column;
+
+    margin: 24px 0;
+
+    padding: 16px;
+
+    background: #f9fafb;
+
+    border-radius: 10px;
+}
+
+.veiculo-km span {
+    color: #6b7280;
+
+    font-size: 0.85rem;
+}
+
+.veiculo-km strong {
+    margin-top: 4px;
+
+    font-size: 1.3rem;
+}
+
+.card-veiculo-actions {
+    display: flex;
+    justify-content: flex-end;
+
+    gap: 10px;
+}
+
+.card-veiculo-actions button {
+    border: none;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+}
+
+@media (max-width: 500px) {
+
+    .card-veiculo {
+        padding: 18px;
+    }
+
+    .card-veiculo-topo {
+        flex-direction: column;
+    }
+
+    .card-veiculo-actions {
+        flex-direction: column;
+    }
+
+    .card-veiculo-actions button {
+        width: 100%;
+    }
+}

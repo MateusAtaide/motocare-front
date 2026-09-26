@@ -1,0 +1,62 @@
+.veiculos-page {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 40px 24px;
+}
+
+.veiculos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 32px;
+}
+
+.veiculos-header h1 {
+    margin: 0;
+
+    font-size: 2rem;
+}
+
+.veiculos-header p {
+    margin: 8px 0 0;
+
+    color: #6b7280;
+}
+
+.veiculos-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 24px;
+}
+
+@media (max-width: 800px) {
+
+    .veiculos-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .veiculos-page {
+        padding: 28px 16px;
+    }
+
+    .veiculos-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .veiculos-header .btn-primary {
+        width: 100%;
+    }
+}

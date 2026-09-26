@@ -1,0 +1,62 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(17, 24, 39, 0.65);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+.modal-container {
+    width: 100%;
+    max-width: 560px;
+
+    max-height: 90vh;
+    overflow-y: auto;
+
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.25);
+
+    animation: abrirModal 0.2s ease;
+}
+
+@keyframes abrirModal {
+
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .modal-overlay {
+        padding: 12px;
+        align-items: flex-end;
+    }
+
+    .modal-container {
+        max-height: 92vh;
+
+        padding: 20px;
+
+        border-radius: 16px 16px 10px 10px;
+    }
+}

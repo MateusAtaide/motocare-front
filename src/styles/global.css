@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+
+    background: #f3f4f6;
+    color: #111827;
+}
+
+img,
+svg {
+    max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Botão principal compartilhado */
+
+.btn-primary {
+    border: none;
+
+    background: #2563eb;
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-editar {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.btn-editar:hover {
+    background: #bfdbfe;
+}
+
+.btn-excluir {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.btn-excluir:hover {
+    background: #fecaca;
+}
+
+.estado-pagina {
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    padding: 40px;
+}
+
+.estado-pagina > span {
+    font-size: 3rem;
+}
+
+.estado-pagina h2 {
+    margin: 15px 0 5px;
+}
+
+.estado-pagina p {
+    color: #6b7280;
+
+    margin-bottom: 20px;
+}

@@ -1,0 +1,47 @@
+.modal-veiculo-header {
+    margin-bottom: 24px;
+}
+
+.modal-veiculo-header h2 {
+    margin: 0;
+    color: #111827;
+}
+
+.modal-veiculo-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+}
+
+.fipe-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    margin-top: 18px;
+    padding: 16px 18px;
+
+    border: 1px solid #dbe3ef;
+    border-radius: 10px;
+
+    background-color: #f8fafc;
+}
+
+.fipe-info strong {
+    font-size: 1rem;
+    color: #172033;
+}
+
+.fipe-info span {
+    font-size: 0.9rem;
+    color: #5f6b7a;
+}
+
+.fipe-carregando {
+    margin-top: 14px;
+    font-size: 0.9rem;
+    color: #5f6b7a;
+}
+
+.modal-veiculo .modal-actions {
+    margin-top: 24px;
+}
